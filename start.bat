@@ -1,0 +1,16 @@
+@echo off
+echo Starting Oracle Listener...
+lsnrctl start
+
+echo Starting Backend...
+start cmd /k "cd backend && mvn spring-boot:run"
+
+echo Waiting for backend to start...
+timeout /t 15
+
+echo Starting Frontend...
+start cmd /k "cd frontend && npm run dev"
+
+echo Opening browser...
+timeout /t 5
+start http://localhost:5173
