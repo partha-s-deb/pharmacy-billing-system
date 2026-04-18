@@ -1,6 +1,4 @@
-Here's your README:
 
-```markdown
 # Pharmacy Billing System
 
 A full-stack web application for managing pharmacy inventory and tracking medicine expiry dates.
