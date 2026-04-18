@@ -5,6 +5,22 @@ A full-stack web application for managing pharmacy inventory and tracking medici
 
 Built with Spring Boot (backend), React (frontend), and Oracle Database.
 
+## About
+
+This project was developed as a final year project for the B.Tech Computer Science program at KIIT University.
+
+The goal was to build a production-style full-stack web application following industry standard practices including a layered backend architecture, RESTful API design, ORM-based database management, and a component-based frontend.
+
+The application solves a real-world problem faced by small and mid-sized pharmacies — managing medicine stock manually leads to expired medicines being sold or going unnoticed until it is too late. This system provides a centralized interface to track inventory and get proactive alerts on medicines that are expired or approaching their expiry date.
+
+## What Was Achieved
+
+- Designed and implemented a RESTful API using Spring Boot with a clean separation of controller, service, repository, and entity layers
+- Integrated Oracle XE as the relational database with Hibernate handling all ORM and schema generation automatically
+- Built a dynamic React frontend with client-side routing, state management using hooks, and live API integration via Axios
+- Implemented expiry status classification logic that categorizes every medicine as Expired, Expiring Soon, or Valid based on the current date
+- Delivered a functional end-to-end application from database to UI with a one-click startup script for easy demonstration
+
 ## Features
 
 - Medicine inventory management (Add, Edit, Delete, View)
